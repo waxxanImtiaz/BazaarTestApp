@@ -1,7 +1,7 @@
 package client;
 
 public class Item {
-    private long id;
+    private Long id;
     private String itemName;
     private String publisherId;
     private String date;
@@ -12,11 +12,11 @@ public class Item {
     private String category;
     private String phoneNumber;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
