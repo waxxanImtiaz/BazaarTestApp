@@ -8,7 +8,7 @@ public class Item {
     private String description;
     private String price;
     private String location;
-    private byte[][] images;
+    private String images;
     private String category;
     private String phoneNumber;
 
@@ -68,11 +68,11 @@ public class Item {
         this.location = location;
     }
 
-    public byte[][] getImages() {
+    public String getImages() {
         return images;
     }
 
-    public void setImages(byte[][] images) {
+    public void setImages(String images) {
         this.images = images;
     }
 

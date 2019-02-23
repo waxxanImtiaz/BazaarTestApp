@@ -1,45 +1,51 @@
 
 $(document).ready(function(){
 
-	$("#products").load('widgets/product/product_item.html');
+	loadData('/list/Phone',getItemByCategory);
 
-	$('#products').load('widgets/product/product_item.html',
-		getItemByCategory('Phone'));
+	$("#signupDialog").load("widgets/signup.html");
 });
 
+var getItemByCategory = function (data) {
+
+	var html = "";
+
+	for (var itemData in data) {
+
+		html += "<div class=\"col-md-3\">\n" +
+			"                    <div class=\"product-item-1\">\n" +
+			"                        <div class=\"product-thumb\">\n" +
+			"                            <img src="+data[itemData].images+" alt="+data[itemData].itemName +">\n" +
+			"                        </div> <!-- /.product-thumb -->\n" +
+			"                        <div class=\"product-content\">\n" +
+			"                            <h5><a href=\"#\"><span id=\"itemName\"> "+data[itemData].itemName +"</span></a></h5>\n" +
+			"                            <span class=\"tagline\"><span id=\"address\"> "+ data[itemData].location +" </span></span>\n" +
+			"                            <span class=\"price\"><span id=\"price\">"+ data[itemData].price +"</span></span>\n" +
+			"                            <span class=\"h6\" ><span id=\"date\"> "+data[itemData].date +" </span></span>\n" +
+			"                        </div> <!-- /.product-content -->\n" +
+			"                    </div> <!-- /.product-item -->\n" +
+			"</div> <!-- /.col-md-3 -->";
 
 
-var _baseURL = "http://localhost:8111";
-var _itemsByCategoryURL = _baseURL+'/list/';
-var getItemByCategory = function(category,callBackMethod){
+	}
+	$('#products').html(html);
 
-	var finalURL = _itemsByCategoryURL+category;
+
+};
+var loadData = function(url,callBackMethod){
 
 	$.ajax({
 		async:false,
 		type: "GET",
 		dataType: "json",
-		url: finalURL,
-		success: function (data) {
-			debugger
-			var products = document.getElementById("products");
-			for (var item in data) {
-				var cols = document.getElementById("col-md-3");
-				cols.getElementById("itemName").innerHTML = data[item].itemName;
-				cols.getElementById("price").innerHTML = data[item].price;
-				cols.getElementById("date").innerHTML = data[item].date;
-				cols.getElementById("address").innerHTML = data[address].date;
-
-				products.add(cols);
-
-			}
-			alert(data[0].itemName);
-
-		},
+		url: url,
+		success: callBackMethod,
 		error: function (error) {
+			alert(error);
 			console.log(error);
 		},
 		failure: function (fail) {
+			alert(fail);
 			console.log(fail);
 		}
 	});

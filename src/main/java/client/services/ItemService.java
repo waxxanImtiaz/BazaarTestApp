@@ -20,6 +20,7 @@ public class ItemService {
         item1.setLocation("PECHS Block 6");
         item1.setPhoneNumber("03002639694");
         item1.setPrice("Rs.14,000");
+        item1.setImages("images/gallery-image-1.jpg");
         item1.setPublisherId("Imtiaz Ali");
         itemList.add(item1);
 
@@ -31,6 +32,8 @@ public class ItemService {
         item2.setItemName("Samsung S8");
         item2.setLocation("DHA Phase 2");
         item2.setPhoneNumber("03112231321");
+
+        item2.setImages("images/products/2.jpg");
         item2.setPrice("Rs.65,000");
         item2.setPublisherId("Kamran");
         itemList.add(item2);
@@ -44,6 +47,7 @@ public class ItemService {
         item3.setLocation("Mallir Cantt");
         item3.setPhoneNumber("03322311232");
         item3.setPrice("Rs.105,000");
+        item3.setImages("images/products/1.jpg");
         item3.setPublisherId("Zeeshan");
         itemList.add(item3);
 
