@@ -12,10 +12,10 @@ var getItemByCategory = function (data) {
 
 	for (var itemData in data) {
 
-		html += "<div class=\"col-md-3\">\n" +
+		html += "<div class=\"col-md-3\">\n" +"<a href='javascript:showItemDetails("+data[itemData].id+");'>"+
 			"                    <div class=\"product-item-1\">\n" +
-			"                        <div class=\"product-thumb\">\n" +
-			"                            <img src="+data[itemData].images+" alt="+data[itemData].itemName +">\n" +
+			"                        <div class=\"product-thumb\" >\n" +
+			"                            <img src="+data[itemData].images+" alt="+data[itemData].itemName +"> \n" +
 			"                        </div> <!-- /.product-thumb -->\n" +
 			"                        <div class=\"product-content\">\n" +
 			"                            <h5><a href=\"#\"><span id=\"itemName\"> "+data[itemData].itemName +"</span></a></h5>\n" +
@@ -23,7 +23,7 @@ var getItemByCategory = function (data) {
 			"                            <span class=\"price\"><span id=\"price\">"+ data[itemData].price +"</span></span>\n" +
 			"                            <span class=\"h6\" ><span id=\"date\"> "+data[itemData].date +" </span></span>\n" +
 			"                        </div> <!-- /.product-content -->\n" +
-			"                    </div> <!-- /.product-item -->\n" +
+			"                    </div> <!-- /.product-item -->\n" +"</a>"+
 			"</div> <!-- /.col-md-3 -->";
 
 
@@ -32,6 +32,16 @@ var getItemByCategory = function (data) {
 
 
 };
+
+var showItemDetails = function (id) {
+
+	loadData('/item/'+id,function (data) {
+
+		alert(data.itemName)
+
+	})
+}
+
 var loadData = function(url,callBackMethod){
 
 	$.ajax({
