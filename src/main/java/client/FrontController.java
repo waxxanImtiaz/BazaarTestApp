@@ -25,6 +25,11 @@ public class FrontController {
         return "Hello i am server";
     }
 
+    @RequestMapping(method = RequestMethod.GET,value = "/search{formData}")
+    public String search(@PathVariable String formData){
+        return "Your have entered "+formData;
+    }
+
 
     @RequestMapping("/item/{id}")
     public Item getItem(@PathVariable Long id){
