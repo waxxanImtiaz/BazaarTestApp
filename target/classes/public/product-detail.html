@@ -4,7 +4,7 @@
 <!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<!--
+<!-- 
 Kool Store Template
 http://www.templatemo.com/preview/templatemo_428_kool_store
 -->
@@ -22,93 +22,145 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/templatemo-misc.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
-	 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	<script src = "landing.js"></script>
-	<script src = "js/jquery.js"></script>
-
-	<script src="js/ajax.js"></script>
-	<script src="landing.js"></script>
-	<script src="widgets/search/search.js"></script>
-
 
 </head>
 <body>
-
-
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-
- <nav class="navbar navbar-default navbar-fixed-top">
-   <div class="container">
-    <div class="navbar-header">
-
-      <a class="navbar-brand" href="#">Bazaar</a>
-    </div>
-   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-
-
-      </ul>
-      <form class="navbar-form navbar-right" >
-        <div class="form-group">
-          <input type="text" class="form-control" id="formData" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default" onclick="showSearchResult();">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="" data-toggle="modal" data-target="#modalRegisterForm" >Login</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div>
-</nav>
-    <div id="signupDialog">
-    </div>
+    
+    <header class="site-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="top-header-left">
+                            <a href="#">Sign Up</a>
+                            <a href="#">Log In</a>
+                        </div> <!-- /.top-header-left -->
+                    </div> <!-- /.col-md-6 -->
+                    <div class="col-md-6 col-sm-6">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-dribbble"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div> <!-- /.social-icons -->
+                    </div> <!-- /.col-md-6 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.top-header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-8">
+                        <div class="logo">
+                            <h1><a href="#">Kool Store</a></h1>
+                        </div> <!-- /.logo -->
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-8 col-sm-6 col-xs-4">
+                        <div class="main-menu">
+                            <a href="#" class="toggle-menu">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <ul class="menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Catalogs</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Policies</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </div> <!-- /.main-menu -->
+                    </div> <!-- /.col-md-8 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.main-header -->
+        <div class="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <div class="list-menu">
+                            <ul>
+                                <li><a href="index.html">Shop</a></li>
+                                <li><a href="product-detail.html">Details</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div> <!-- /.list-menu -->
+                    </div> <!-- /.col-md-6 -->
+                    <div class="col-md-6 col-sm-5">
+                        <div class="notification">
+                            <span>Free Shipping on any order above $50</span>
+                        </div>
+                    </div> <!-- /.col-md-6 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.main-nav -->
+    </header> <!-- /.site-header -->
 
     <div class="content-section">
         <div class="container">
-
             <div class="row">
-			<div id = "products">
-
-			</div>
-
-
-            </div> <!-- /.row -->
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="product-item-4">
+                <div class="col-md-8">
+                    <div class="product-image">
+                        <img src="images/featured/7.jpg" alt="">
+                    </div> <!-- /.product-image -->
+                    <div class="product-information">
+                        <h2>Product Title Goes Here</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, esse, excepturi, sint ut et numquam reiciendis nulla in deserunt quaerat provident obcaecati reprehenderit iusto ab neque corporis id temporibus architecto quia adipisci? Officia, aliquam, eveniet, molestias, voluptate porro assumenda error soluta ab blanditiis voluptatum nisi voluptates debitis doloribus. Asperiores, provident fuga quibusdam id tenetur!<br><br>Nostrum quis quo earum enim suscipit molestiae cupiditate reprehenderit? Atque, numquam nostrum adipisci suscipit exercitationem sed ullam. Odio, laborum, obcaecati harum nostrum pariatur ipsam itaque minima atque expedita at amet dignissimos odit quisquam laboriosam eius officiis ratione alias sint rerum distinctio. Quidem, veritatis consequuntur voluptas sunt quo deleniti reprehenderit deserunt atque minus non.</p>
+                        <p class="product-infos">
+                            <span>Bundle Price: $450</span>
+                            <span>Discount: 30%</span>
+                        </p>
+                        <ul class="product-buttons">
+                            <li>
+                                <a href="#" class="main-btn">Buy Now</a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-btn">Add to Cart</a>
+                            </li>
+                        </ul>
+                    </div> <!-- /.product-information -->
+                </div> <!-- /.col-md-8 -->
+                <div class="col-md-4 col-sm-8">
+                    <div class="product-item-2">
                         <div class="product-thumb">
-                            <img src="images/featured/3.jpg" alt="Product Title">
-                        </div> <!-- /.product-thumb -->
-                        <div class="product-content overlay">
-                            <h5><a href="#">Name Of Shirt</a></h5>
-                            <span class="tagline">Partner Name</span>
-                            <span class="price">$60.00</span>
-                            <p>Doloremque quo possimus quas necessitatibus.</p>
-                        </div> <!-- /.product-content -->
-                    </div> <!-- /.product-item-4 -->
-                </div> <!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="product-item-4">
-                        <div class="product-thumb">
-                            <img src="images/featured/4.jpg" alt="Product Title">
+                            <img src="images/featured/1.jpg" alt="Product Title">
                         </div> <!-- /.product-thumb -->
                         <div class="product-content overlay">
                             <h5><a href="#">Name Of Shirt</a></h5>
                             <span class="tagline">Partner Name</span>
                             <span class="price">$30.00</span>
-                            <p>Doloremque quo possimus quas necessitatibus.</p>
+                            <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
                         </div> <!-- /.product-content -->
-                    </div> <!-- /.product-item-4 -->
-                </div> <!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="ads-placemenet">
-                        <img src="images/featured/5.jpg" alt="">
-                    </div> <!-- /.ads-placement -->
+                    </div> <!-- /.product-item-2 -->
+                    <div class="product-item-2">
+                        <div class="product-thumb">
+                            <img src="images/featured/2.jpg" alt="Product Title">
+                        </div> <!-- /.product-thumb -->
+                        <div class="product-content overlay">
+                            <h5><a href="#">Name Of Shirt</a></h5>
+                            <span class="tagline">Partner Name</span>
+                            <span class="price">$40.00</span>
+                            <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
+                        </div> <!-- /.product-content -->
+                    </div> <!-- /.product-item-2 -->
+                    <div class="product-item-2">
+                        <div class="product-thumb">
+                            <img src="images/featured/8.jpg" alt="Product Title">
+                        </div> <!-- /.product-thumb -->
+                        <div class="product-content overlay">
+                            <h5><a href="#">Name Of Shirt</a></h5>
+                            <span class="tagline">Partner Name</span>
+                            <span class="price">$50.00</span>
+                            <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
+                        </div> <!-- /.product-content -->
+                    </div> <!-- /.product-item-2 -->
                 </div> <!-- /.col-md-4 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
@@ -118,63 +170,7 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-title">
-                    <h2>Latest Selling Products</h2>
-                </div> <!-- /.section -->
-            </div> <!-- /.row -->
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img src="images/gallery-image-2.jpg" alt="">
-                        </div> <!-- /.product-thum -->
-                        <div class="product-content">
-                            <h5><a href="#">Name of Shirt</a></h5>
-                            <span class="price">$40.00</span>
-                        </div> <!-- /.product-content -->
-                    </div> <!-- /.product-item -->
-                </div> <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img src="images/gallery-image-3.jpg" alt="">
-                        </div> <!-- /.product-thum -->
-                        <div class="product-content">
-                            <h5><a href="http://localhost:8111/list">Sport Shirt</a></h5>
-                            <span class="price">$40.00</span>
-                        </div> <!-- /.product-content -->
-                    </div> <!-- /.product-item -->
-                </div> <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img src="images/gallery-image-4.jpg" alt="">
-                        </div> <!-- /.product-thum -->
-                        <div class="product-content">
-                            <h5><a href="#">Elegant Shirt</a></h5>
-                            <span class="price">$60.00</span>
-                        </div> <!-- /.product-content -->
-                    </div> <!-- /.product-item -->
-                </div> <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img src="images/gallery-image-5.jpg" alt="">
-                        </div> <!-- /.product-thum -->
-                        <div class="product-content">
-                            <h5><a href="#">Another New Shirt</a></h5>
-                            <span class="price">$80.00</span>
-                        </div> <!-- /.product-content -->
-                    </div> <!-- /.product-item -->
-                </div> <!-- /.col-md-3 -->
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </div> <!-- /.content-section -->
-
-    <div class="content-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-title">
-                    <h2>Top Selling Products</h2>
+                    <h2>Vote For Future Products</h2>
                 </div> <!-- /.section -->
             </div> <!-- /.row -->
             <div class="row">
@@ -292,7 +288,7 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
                             <a class="btn next"><i class="fa fa-angle-right"></i></a>
                         </div>
                         <div id="owl-demo" class="owl-carousel">
-                            <div class="item">
+                            <div class="item"> 
                             	<a href="#"><img src="images/tm-170x80-1.jpg" alt=""></a>
                           	</div>
                             <div class="item">
@@ -379,7 +375,7 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <span>Copyright &copy; 2084 <a href="#">bazaar.com</a> </span>
+                        <span>Copyright &copy; 2084 <a href="#">Company Name</a> | Design: <a href="http://www.templatemo.com">templatemo</a></span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, expedita soluta mollitia accusamus ut architecto maiores cum fugiat. Pariatur ipsum officiis fuga deleniti alias quia nostrum veritatis enim doloremque eligendi?</p>
                     </div> <!-- /.col-md-12 -->
                 </div> <!-- /.row -->
@@ -387,14 +383,13 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
         </div> <!-- /.bottom-footer -->
     </footer> <!-- /.site-footer -->
 
-
+    
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
     <script src="js/jquery.easing-1.3.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
 
 
 </body>
