@@ -6,14 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Bazaar" />
+        <module name="persistance-jpa" />
+        <module name="spring-boot" />
         <module name="springbootprojects" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Bazaar" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Bazaar" options="-parameters" />
+      <module name="persistance-jpa" options="-parameters" />
+      <module name="spring-boot" options="-parameters" />
       <module name="springbootprojects" options="-parameters" />
     </option>
   </component>

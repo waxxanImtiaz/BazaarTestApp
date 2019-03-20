@@ -20,7 +20,7 @@ public class ItemService {
         item1.setLocation("PECHS Block 6");
         item1.setPhoneNumber("03002639694");
         item1.setPrice("Rs.14,000");
-        item1.setImages("images/gallery-image-1.jpg");
+        item1.setImages("images/products/1.jpg");
         item1.setPublisherId("Imtiaz Ali");
         itemList.add(item1);
 
@@ -50,6 +50,21 @@ public class ItemService {
         item3.setImages("images/products/1.jpg");
         item3.setPublisherId("Zeeshan");
         itemList.add(item3);
+
+
+        Item item4 = new Item();
+        item4.setId(4L);
+        item4.setCategory("Phone");
+        item4.setDate((new Date()).toString());
+        item4.setItemName("Samsung 8");
+        item4.setLocation("Mallir Cantt");
+        item4.setPhoneNumber("03322311232");
+        item4.setPrice("Rs.105,000");
+        item4.setImages("images/products/4.jpg");
+        item4.setPublisherId("Zeeshan");
+        itemList.add(item4);
+
+
 
     }
 
