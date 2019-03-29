@@ -1,15 +1,17 @@
-var showSearchResult = function(){
+var showSearchResult = function () {
 
     var searchValue = $('#formData').val();
     debugger
     $.ajax({
-        async:false,
+        async: false,
         type: "GET",
         dataType: "text",
-        url: '/search?formData='+searchValue,
+        url: '/search?formData=' + searchValue,
         success: function (data) {
-           // debugger
-            alert(data);
+            // debugger
+            if (data)
+                alert(data.itemName);
+            else alert("Search not Found");
         },
         error: function (error) {
             alert(error);

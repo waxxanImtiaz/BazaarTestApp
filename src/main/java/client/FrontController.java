@@ -1,11 +1,16 @@
 package client;
 
+import client.repositories.ItemRepository;
 import client.services.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.print.attribute.standard.Media;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -14,6 +19,7 @@ public class FrontController {
 
     @Autowired
     private ItemService itemService;
+
 
     @RequestMapping(produces = "application/json",value = "/list/{category}")
     public List getItemsByCategory(@PathVariable String category){
@@ -26,8 +32,10 @@ public class FrontController {
     }
 
     @RequestMapping(method = RequestMethod.GET,value = "/search{formData}")
-    public String search(@PathVariable String formData){
-        return "Your have entered "+formData;
+    public Item search(@PathVariable String formData){
+
+        return itemService.getItem(formData);
+
     }
 
 
@@ -38,7 +46,7 @@ public class FrontController {
 
     @RequestMapping(method = RequestMethod.POST, value = "/item")
     public String uploadItem(@RequestBody Item item){
-        if (itemService.uploadItem(item)){
+        if (itemService.uploadItem(item) != null){
             return "Item uploaded successfully!";
         }
         return "Item not uploaded";
@@ -46,7 +54,7 @@ public class FrontController {
 
     @RequestMapping(method = RequestMethod.PUT, value = "/item")
     public String updateItem(@RequestBody Item item){
-        if (itemService.uploadItem(item)){
+        if (itemService.updateItem(item) != null){
             return "Item updated successfully!";
         }
         return "Item not updated";
@@ -54,10 +62,8 @@ public class FrontController {
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/item/{id}")
     public String saveStudent(@PathVariable Long id){
-        if (itemService.deleteItem(id)){
-            return "Item deleted successfully!";
-        }
-        return "Item not deleted";
+        itemService.deleteItem(id);
+        return "Item deleted successfully!";
     }
 
 
