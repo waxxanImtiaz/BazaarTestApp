@@ -44,7 +44,8 @@ public class ItemService {
         return itemRepository.save(item);
     }
 
-    public Item getItem(String searchValue){
+    public List<Item> getItem(String searchValue){
+
         return itemRepository.searchItem(searchValue);
     }
 

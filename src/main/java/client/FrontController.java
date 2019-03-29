@@ -32,7 +32,7 @@ public class FrontController {
     }
 
     @RequestMapping(method = RequestMethod.GET,value = "/search{formData}")
-    public Item search(@PathVariable String formData){
+    public List<Item> search(@PathVariable String formData){
 
         return itemService.getItem(formData);
 
