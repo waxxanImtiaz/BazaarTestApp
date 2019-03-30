@@ -8,4 +8,6 @@ public class ResponseRelatedFields {
     public static final String SUCCESS_REQ_CODE = "0";
     public static final String FAILURE_REQ_CODE = "1";
     public static String DEFAULT_MESSAGE = "";
+    public static String SIGNUP_SUCCESS_MESSAGE = "Signed up successfully!";
+
 }

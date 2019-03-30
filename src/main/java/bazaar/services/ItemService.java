@@ -43,7 +43,6 @@ public class ItemService {
     }
 
     public List getItem(String searchValue){
-
         return itemRepository.searchItem(searchValue);
     }
 
