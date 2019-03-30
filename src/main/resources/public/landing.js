@@ -11,9 +11,10 @@ $(document).ready(function(){
 	});
 });
 
-var getItemByCategory = function (data) {
+var getItemByCategory = function (d) {
 
 	var html = "";
+	var data = d.responseObject;
 
 	for (var itemData in data) {
 
@@ -42,7 +43,7 @@ var showItemDetails = function (id) {
 
 	loadData('/item/'+id,function (data) {
 
-		alert(data.itemName)
+		alert(data.responseObject.itemName)
 
 	})
 }
