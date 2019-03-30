@@ -1,6 +1,6 @@
-package client.repositories;
+package bazaar.repositories;
 
-import client.Item;
+import bazaar.entities.Item;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;

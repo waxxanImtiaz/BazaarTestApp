@@ -1,6 +1,7 @@
-package client;
+package bazaar;
 
-import client.repositories.ItemRepository;
+import bazaar.entities.Item;
+import bazaar.repositories.ItemRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

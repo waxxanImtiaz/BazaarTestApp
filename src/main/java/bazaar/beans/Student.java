@@ -1,4 +1,4 @@
-package client;
+package bazaar.beans;
 
 public class Student {
     private String id;

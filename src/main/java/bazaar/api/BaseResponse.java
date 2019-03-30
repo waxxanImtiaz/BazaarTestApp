@@ -1,4 +1,4 @@
-package client.api;
+package bazaar.api;
 
 /*
 * resCode = -1( data not found)

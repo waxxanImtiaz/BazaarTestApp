@@ -1,4 +1,4 @@
-package client;
+package bazaar.entities;
 
 import javax.persistence.*;
 

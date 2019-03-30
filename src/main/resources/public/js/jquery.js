@@ -6212,14 +6212,14 @@ jQuery.each([ "Height", "Width" ], function( i, name ) {
 
 		return ("scrollTo" in elem && elem.document) ? // does it walk and quack like a window?
 			// Everyone else use document.documentElement or document.body depending on Quirks vs Standards mode
-			elem.document.compatMode === "CSS1Compat" && elem.document.documentElement[ "client" + name ] ||
-			elem.document.body[ "client" + name ] :
+			elem.document.compatMode === "CSS1Compat" && elem.document.documentElement[ "bazaar" + name ] ||
+			elem.document.body[ "bazaar" + name ] :
 
 			// Get document width or height
 			(elem.nodeType === 9) ? // is it a document
 				// Either scroll[Width/Height] or offset[Width/Height], whichever is greater
 				Math.max(
-					elem.documentElement["client" + name],
+					elem.documentElement["bazaar" + name],
 					elem.body["scroll" + name], elem.documentElement["scroll" + name],
 					elem.body["offset" + name], elem.documentElement["offset" + name]
 				) :

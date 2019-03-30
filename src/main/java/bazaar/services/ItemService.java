@@ -1,13 +1,11 @@
-package client.services;
+package bazaar.services;
 
-import client.Item;
-import client.Student;
-import client.repositories.ItemRepository;
+import bazaar.entities.Item;
+import bazaar.repositories.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Service

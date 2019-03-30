@@ -1,5 +1,6 @@
-package client;
+package bazaar;
 
+import bazaar.beans.Student;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
