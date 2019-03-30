@@ -14,7 +14,8 @@ public interface ItemRepository extends CrudRepository<Item, Long> {
     Item findItemById(@Param("id") Long Id);
 
 
-    @Query("SELECT  i FROM Item i WHERE i.itemName like %:searchVal% or i.category like %:searchVal% or i.location like %:searchVal% or i.date like %:searchVal%" +
-            " or i.phoneNumber like %:searchVal% or i.price like %:searchVal% or i.price like %:searchVal%")
+    @Query("SELECT  i FROM Item i WHERE i.itemName like %:searchVal% ")
+//            "or i.location like %:searchVal% or i.date like %:searchVal%" +
+//            " or i.phoneNumber like %:searchVal% or i.price like %:searchVal% or i.price like %:searchVal%")
     List<Item> searchItem(@Param("searchVal") String searchVal);
 }

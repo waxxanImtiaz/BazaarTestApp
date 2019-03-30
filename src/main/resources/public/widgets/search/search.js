@@ -1,35 +1,50 @@
-var showSearchResult = function () {
 
-    var searchValue = $('#formData').val();
+$("#searchForm").submit(function(e) {
+    e.preventDefault();
+});
+$(document).ready(function () {
+    // Listen to click event on the submit button
+    $('#searchSubmit').click(function (e) {
 
-    $.ajax({
-        async: false,
-        type: "GET",
-        dataType: "text",
-        url: '/search?formData=' + searchValue,
-        success: function (data) {
-            if (data)
-                showResult(data);
-            else alert("Search not Found");
-        },
-        error: function (error) {
+        e.preventDefault();
 
-            alert(error);
-            console.log(error);
-        },
-        failure: function (fail) {
+        var searchValue = $("#search").val();
 
-            alert(fail);
-            console.log(fail);
-        }
+        $.ajax({
+            async: false,
+            type: "GET",
+            dataType: "text",
+            url: '/search/' + searchValue,
+            success: function (data) {
+                var dataObject = JSON.parse(data);
+                if (dataObject.resCode == '0')
+                    showS(dataObject.responseObject);
+                else
+                    $('#products').html('<h1>'+dataObject.message+'</h1>');
+                return false;
+            },
+            error: function (error) {
+
+                alert("Search not Found");
+                console.log(error);
+                return false;
+            },
+            failure: function (fail) {
+
+                alert(fail);
+                console.log(fail);
+                return false;
+            }
+        });
+
     });
-};
-
-var showResult = function (data) {
+});
+var showS = function (data) {
     var html = "";
 
+    debugger
     for (var itemData in data) {
-
+        console.log(data[itemData].itemName);
         html += "<div class=\"col-md-3\">\n" +"<a href='javascript:showItemDetails("+data[itemData].id+");'>"+
             "                    <div class=\"product-item-1\">\n" +
             "                        <div class=\"product-thumb\" >\n" +
@@ -48,4 +63,5 @@ var showResult = function (data) {
     }
     $('#products').html(html);
 
+    return false;
 };

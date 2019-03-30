@@ -33,4 +33,5 @@ public class BaseResponse<T> {
     public void setResCode(String resCode) {
         this.resCode = resCode;
     }
+
 }
