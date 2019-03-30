@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	loadData('/list/Phone',getItemByCategory);
 
-	$("#signupDialog").load("widgets/signup.html");
+	$("#signupDialog").load("widgets/signup/signup.html");
 
 
 	$('#bazaar').click(function (e) {
