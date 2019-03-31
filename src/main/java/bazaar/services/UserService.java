@@ -17,13 +17,16 @@ public class UserService {
 
     @Value("${user.aleardy.exits}")
     private String userAlreadyExits;
+
+    @Value("${user.signup.success}")
+    private String successSignuedUp;
     public BaseResponse createUser(User user){
         BaseResponse baseResponse;
         if (userRepository.userExists(user.getEmail()) == null) {
             userRepository.save(user);
             baseResponse = BaseExecutor.getBaseResponse(user);
 
-            baseResponse.setMessage("${user.signup.success}");
+            baseResponse.setMessage(successSignuedUp);
         }else {
             baseResponse = BaseExecutor.getBaseResponse(null);
             baseResponse.setMessage(userAlreadyExits);

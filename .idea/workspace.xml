@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9603421-6c0d-4cca-8e31-eef0e2407455" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/signup/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/signup/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+            <state relative-caret-position="95">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#519#542#1" expanded="true" />
@@ -330,7 +327,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554014776539" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554014900802" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/public/widgets/signup" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -441,7 +438,7 @@
       <workItem from="1551599739026" duration="517000" />
       <workItem from="1553062436575" duration="7422000" />
       <workItem from="1553840483878" duration="8258000" />
-      <workItem from="1553861361695" duration="33024000" />
+      <workItem from="1553861361695" duration="33153000" />
     </task>
     <task id="LOCAL-00001" summary="setting products">
       <created>1550423712492</created>
@@ -548,11 +545,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554010906358</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="singup created">
+      <created>1554014805938</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1554014805938</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140090000" />
+    <option name="totallyTimeSpent" value="140219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -648,25 +652,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java</url>
-          <line>22</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java</url>
-          <line>23</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java</url>
-          <line>25</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java</url>
-          <line>30</line>
+          <line>33</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -1029,8 +1033,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        <state relative-caret-position="95">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#519#542#1" expanded="true" />
