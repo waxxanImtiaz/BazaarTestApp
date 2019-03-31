@@ -18,7 +18,7 @@ public class UserController {
         return userService.getUserByEmailAndPassword(email,password);
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/user")
+    @RequestMapping(produces = "application/json",method = RequestMethod.POST, value = "/signup")
     public BaseResponse signup(@RequestBody User user){
         return userService.createUser(user);
     }
