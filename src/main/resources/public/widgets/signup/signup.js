@@ -51,16 +51,22 @@ var signup = function(){
         data: postData
         ,
         success: function (data) {
-            var dataObject = JSON.parse(data);
-            if (dataObject.resCode == '0')
-                showS(dataObject.responseObject);
-            else
-                $('#products').html('<h1>'+dataObject.message+'</h1>');
+           debugger
+            if (data.resCode == '0'){
+                document.cookie = 'name='+name;
+                document.cookie = 'email='+email;
+                document.cookie = 'mobile='+mob;
+
+
+                alert('Loged in');
+            }else{
+                alert('Unable to singup');
+            }
             return false;
         },
         error: function (error) {
 
-           alert("Search not Found");
+           alert("Unbale to signup");
             console.log(error);
             return false;
         },

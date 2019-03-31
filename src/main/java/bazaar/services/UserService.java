@@ -7,6 +7,7 @@ import bazaar.repositories.UserRepository;
 import bazaar.resources.UserResource;
 import bazaar.utils.ResponseRelatedFields;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,13 +15,21 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-
+    @Value("${user.aleardy.exits}")
+    private String userAlreadyExits;
     public BaseResponse createUser(User user){
-        userRepository.save(user);
-        BaseResponse baseResponse = BaseExecutor.getBaseResponse(user);
+        BaseResponse baseResponse;
+        if (userRepository.userExists(user.getEmail()) == null) {
+            userRepository.save(user);
+            baseResponse = BaseExecutor.getBaseResponse(user);
 
-        baseResponse.setMessage(ResponseRelatedFields.SIGNUP_SUCCESS_MESSAGE);
+            baseResponse.setMessage("${user.signup.success}");
+        }else {
+            baseResponse = BaseExecutor.getBaseResponse(null);
+            baseResponse.setMessage(userAlreadyExits);
+        }
         return baseResponse;
+
     }
     public BaseResponse getUserByEmailAndPassword(String email, String password){
         UserResource res = new UserResource();
