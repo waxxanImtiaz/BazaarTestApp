@@ -42,6 +42,7 @@ var signup = function(){
 
 
     var postData = JSON.stringify(obj);
+    // show_loader();
     $.ajax({
         async: false,
         type: "POST",
@@ -51,17 +52,18 @@ var signup = function(){
         data: postData
         ,
         success: function (data) {
+            // hide_loader();
            debugger
             if (data.resCode == '0'){
                 document.cookie = 'name='+name;
                 document.cookie = 'email='+email;
                 document.cookie = 'mobile='+mob;
 
-
-                alert('Loged in');
-            }else{
-                alert('Unable to singup');
+                return
+                //alert(data.message);
             }
+            alert(data.message);
+
             return false;
         },
         error: function (error) {
