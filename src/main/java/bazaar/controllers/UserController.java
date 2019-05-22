@@ -15,7 +15,7 @@ public class UserController {
 
     @RequestMapping( "/user/{email}/{password}")
     public BaseResponse getUserByEmailAndPassword(@PathVariable String email,@PathVariable String password){
-        return userService.getUserByEmailAndPassword(email,password);
+                return userService.getUserByEmailAndPassword(email,password);
     }
 
     @RequestMapping(produces = "application/json",method = RequestMethod.POST, value = "/signup")
@@ -25,3 +25,5 @@ public class UserController {
 
 
 }
+
+
