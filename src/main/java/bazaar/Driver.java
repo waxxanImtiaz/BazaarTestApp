@@ -78,6 +78,34 @@ public class Driver {
             itemList.add(item4);
 
 
+
+
+            Item item5 = new Item();
+            item5.setId(4L);
+            item5.setCategory("Phone");
+            item5.setDate((new Date()).toString());
+            item5.setItemName("Samsung 8");
+            item5.setLocation("Mallir Cantt");
+            item5.setPhoneNumber("03322311232");
+            item5.setPrice("Rs.105,000");
+            item5.setImages("images/products/4.jpg");
+            item5.setPublisherId("Zeeshan");
+            itemList.add(item5);
+
+            Item item6 = new Item();
+            item6.setId(4L);
+            item6.setCategory("Phone");
+            item6.setDate((new Date()).toString());
+            item6.setItemName("Samsung 8");
+            item6.setLocation("Mallir Cantt");
+            item6.setPhoneNumber("03322311232");
+            item6.setPrice("Rs.105,000");
+            item6.setImages("images/products/4.jpg");
+            item6.setPublisherId("Zeeshan");
+            itemList.add(item6);
+
+
+
             repository.saveAll(itemList);
 
 

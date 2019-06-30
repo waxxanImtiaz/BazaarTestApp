@@ -14,7 +14,7 @@ public class ItemService {
     private ItemRepository itemRepository;
 
 
-    public List getItemsByCategory(String category){
+    public List<Item> getItemsByCategory(String category){
 
         List<Item> byCategory = new ArrayList<>();
         for (Item item : itemRepository.findAll()){

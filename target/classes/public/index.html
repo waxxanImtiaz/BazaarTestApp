@@ -22,6 +22,7 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/templatemo-misc.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="widgets/loader/loader.css">
 	 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src = "landing.js"></script>
@@ -29,13 +30,17 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
     <script src = "widgets/signup/signup.js"></script>
 	<script src="js/ajax.js"></script>
 	<script src="landing.js"></script>
+	<script src="widgets/loader/loader_handler.js"></script>
 	<script src="widgets/search/search.js"></script>
 
+    <!--VUE JS-->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 
 </head>
 <body>
 
-
+<!--<div class="loader"></div>-->
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -73,10 +78,13 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
         </div>
         <button type="submit" class="btn btn-default" id="searchSubmit" >Submit</button>
       </form>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="" data-toggle="modal" data-target="#modalRegisterForm" >Login</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+
+
+   </div><!-- /.navbar-collapse -->
   </div>
 </nav>
     <div id="signupDialog">
@@ -84,7 +92,7 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
 
     <div class="content-section">
         <div class="container">
-
+            <!--<img src="images/featured/4.jpg" class="rounded-circle" alt="Cinque Terre" width="10%" height="10%">-->
             <div class="row">
 			<div id = "products">
 

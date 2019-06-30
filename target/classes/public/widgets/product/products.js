@@ -11,7 +11,7 @@ var getItemByCategory = function (data) {
         html += "<div class=\"col-md-3\">\n" +"<a href='javascript:showItemDetails("+data[itemData].id+");'>"+
             "                    <div class=\"product-item-1\">\n" +
             "                        <div class=\"product-thumb\" >\n" +
-            "                            <img src="+data[itemData].images+" alt="+data[itemData].itemName +"> \n" +
+            "                            <img class=\"rounded mx-auto d-block\" src="+data[itemData].images+" alt="+data[itemData].itemName +"> \n" +
             "                        </div> <!-- /.product-thumb -->\n" +
             "                        <div class=\"product-content\">\n" +
             "                            <h5><a href=\"#\"><span id=\"itemName\"> "+data[itemData].itemName +"</span></a></h5>\n" +

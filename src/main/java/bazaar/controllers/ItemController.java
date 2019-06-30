@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 public class ItemController {
 
@@ -55,6 +55,12 @@ public class ItemController {
         return BaseExecutor.getBaseResponse( itemService.getItemById(id));
     }
 
+
+    @RequestMapping("/categoryList")
+    public String getCategoryList() {
+        return "Category list";
+    }
+
     @RequestMapping(method = RequestMethod.POST, value = "/item")
     public String uploadItem(@RequestBody Item item) {
         if (itemService.uploadItem(item) != null) {
@@ -65,7 +71,7 @@ public class ItemController {
 
     @RequestMapping(method = RequestMethod.PUT, value = "/item")
     public BaseResponse updateItem(@RequestBody Item item) {
-        BaseResponse baseResponse =  null;
+        BaseResponse baseResponse;
         Item i = itemService.updateItem(item);
         baseResponse = BaseExecutor.getBaseResponse(i);
         if (i != null) {
