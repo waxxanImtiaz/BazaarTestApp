@@ -9,6 +9,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface CategoriesRepo extends CrudRepository<Categories, Long> {
-    @Query("SELECT i FROM Categories i")
-    List getAll();
+//    @Query("SELECT i FROM Categories i")
+//    List getAll();
 }

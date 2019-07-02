@@ -15,6 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 @SpringBootApplication
 // Using a root package also allows the @ComponentScan annotation to be used without needing to specify a basePackage attribute
@@ -114,7 +115,35 @@ public class Driver {
 
         };
     }
-
+//
+//    @Bean
+//    public CommandLineRunner saveCategories(CategoriesRepo repository) {
+//
+//        return (args) -> {
+//
+//            List<Categories> categoriesList = new ArrayList<>();
+//
+//            Categories categories1 = new Categories();
+//            categories1.setName("Mobiles");
+//            categories1.setId(1L);
+//
+//
+//
+//            Categories categories2 = new Categories();
+//            categories2.setName("Cars");
+//            categories2.setId(2L);
+//
+//
+//
+//            categoriesList.add(categories1);
+//            categoriesList.add(categories2);
+//
+//
+//
+//            repository.saveAll(categoriesList);
+//
+//        };
+//    }
     @Bean
     public CommandLineRunner saveCategoryItems(CategoryItemRepo repository) {
         return (args) -> {
@@ -123,89 +152,26 @@ public class Driver {
             CategoryItems item1 = new CategoryItems();
             item1.setId(1L);
             item1.setName("Mobiles");
+            Categories one = (new Categories());
+            one.setId(1L);
+            one.setName("Mobiles");
+            item1.setCategories(one);
+
+
 
             CategoryItems item2 = new CategoryItems();
             item2.setId(2L);
             item2.setName("Tablets");
+            Categories two = (new Categories());
+            two.setId(1L);
+            two.setName("Mobiles");
+            item2.setCategories(two);
 
+            List<CategoryItems> list = new ArrayList<>();
 
-            CategoryItems item3 = new CategoryItems();
-            item3.setId(3L);
-            item3.setName("Cars");
+            list.add(item1);
+            list.add(item2);
 
-
-            CategoryItems item4 = new CategoryItems();
-            item4.setId(4L);
-            item4.setName("Spare Parts");
-
-
-            CategoryItems item5 = new CategoryItems();
-            item5.setId(5L);
-            item5.setName("Cars on Installments");
-
-
-            CategoryItems item6 = new CategoryItems();
-            item6.setId(6L);
-            item6.setName("Accessories");
-
-
-            List<CategoryItems> catItems1 = new ArrayList<>();
-            catItems1.add(item1);
-            catItems1.add(item2);
-            catItems1.add(item3);
-            catItems1.add(item4);
-            catItems1.add(item5);
-            catItems1.add(item6);
-            repository.saveAll(catItems1);
-
-        };
-    }
-    @Bean
-    public CommandLineRunner saveCategories(CategoriesRepo repository) {
-        return (args) -> {
-
-            Categories cat1 = new Categories();
-            cat1.setId(1L);
-            cat1.setName("Mobiles");
-
-//            CategoryItems item1 = new CategoryItems();
-//            item1.setId(5L);
-            CategoryItems item2 = new CategoryItems();
-            item2.setId(6L);
-
-
-            List<CategoryItems> catItems1 = new ArrayList<>();
-//            catItems1.add(item1);
-            catItems1.add(item2);
-            cat1.setCategoryItems(catItems1);
-
-            /*=======item 2*/
-
-            Categories cat2 = new Categories();
-            cat2.setId(2L);
-            cat2.setName("Vehicles");
-
-//            CategoryItems item4 = new CategoryItems();
-//            item4.setId(5L);
-//            item4.setName("Cars");
-
-            CategoryItems item5 = new CategoryItems();
-            item5.setId(6L);
-            item5.setName("Cars on Installments");
-
-            CategoryItems item6 = new CategoryItems();
-            item6.setId(7L);
-            item6.setName("Spare parts");
-
-            List<CategoryItems> catItems2 = new ArrayList<>();
-//            catItems2.add(item4);
-            catItems2.add(item5);
-            catItems2.add(item6);
-            cat2.setCategoryItems(catItems2);
-
-            List<Categories> list = new ArrayList();
-            list.add(cat1);
-            list.add(cat2);
             repository.saveAll(list);
 
         };

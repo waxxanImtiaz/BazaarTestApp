@@ -11,7 +11,7 @@ import java.util.List;
 public class CategoriesService {
     @Autowired
     private CategoriesRepo categoriesRepo;
-    public List<Categories> getAllCategories(){
-        return categoriesRepo.getAll();
-    }
+//    public List<Categories> getAllCategories(){
+//        return categoriesRepo.getAll();
+//    }
 }

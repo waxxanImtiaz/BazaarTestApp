@@ -1,19 +1,18 @@
 package bazaar.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Entity
+@Entity(name="category_items")
 public class CategoryItems {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
     private String name;
 
+    @ManyToOne(cascade = {CascadeType.ALL})
+    private Categories categories;
 
     public Long getId() {
         return id;
@@ -29,5 +28,13 @@ public class CategoryItems {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Categories getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Categories categories) {
+        this.categories = categories;
     }
 }

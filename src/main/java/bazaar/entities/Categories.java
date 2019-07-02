@@ -3,16 +3,14 @@ package bazaar.entities;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Entity(name="categories")
 public class Categories {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
     private String name;
-    @OneToMany
-    private List<CategoryItems> categoryItems;
 
     public Long getId() {
         return id;
@@ -30,11 +28,4 @@ public class Categories {
         this.name = name;
     }
 
-    public List<CategoryItems> getCategoryItems() {
-        return categoryItems;
-    }
-
-    public void setCategoryItems(List<CategoryItems> categoryItems) {
-        this.categoryItems = categoryItems;
-    }
 }

@@ -63,7 +63,7 @@ public class ItemController {
 
     @RequestMapping("/categoryList")
     public List getCategoryList() {
-        return categoriesService.getAllCategories();
+        return null;//categoriesService.getAllCategories();
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/item")
