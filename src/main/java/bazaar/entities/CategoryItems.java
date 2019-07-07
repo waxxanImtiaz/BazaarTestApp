@@ -9,10 +9,13 @@ public class CategoryItems {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
+
     private String name;
 
-    @ManyToOne(cascade = {CascadeType.ALL})
-    private Categories categories;
+//    @ManyToOne(cascade = {CascadeType.ALL})
+//    private Categories categories;
+    @Column(name="categories_id")
+    private String categoryId;
 
     public Long getId() {
         return id;
@@ -30,11 +33,19 @@ public class CategoryItems {
         this.name = name;
     }
 
-    public Categories getCategories() {
-        return categories;
+    public String getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategories(Categories categories) {
-        this.categories = categories;
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
     }
+
+//    public Categories getCategories() {
+//        return categories;
+//    }
+//
+//    public void setCategories(Categories categories) {
+//        this.categories = categories;
+//    }
 }

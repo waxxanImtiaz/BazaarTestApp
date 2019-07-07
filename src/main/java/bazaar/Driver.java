@@ -144,36 +144,36 @@ public class Driver {
 //
 //        };
 //    }
-    @Bean
-    public CommandLineRunner saveCategoryItems(CategoryItemRepo repository) {
-        return (args) -> {
-
-
-            CategoryItems item1 = new CategoryItems();
-            item1.setId(1L);
-            item1.setName("Mobiles");
-            Categories one = (new Categories());
-            one.setId(1L);
-            one.setName("Mobiles");
-            item1.setCategories(one);
-
-
-
-            CategoryItems item2 = new CategoryItems();
-            item2.setId(2L);
-            item2.setName("Tablets");
-            Categories two = (new Categories());
-            two.setId(1L);
-            two.setName("Mobiles");
-            item2.setCategories(two);
-
-            List<CategoryItems> list = new ArrayList<>();
-
-            list.add(item1);
-            list.add(item2);
-
-            repository.saveAll(list);
-
-        };
-    }
+//    @Bean
+//    public CommandLineRunner saveCategoryItems(CategoryItemRepo repository) {
+//        return (args) -> {
+//
+//
+//            CategoryItems item1 = new CategoryItems();
+//            item1.setId(1L);
+//            item1.setName("Mobiles");
+//            Categories one = (new Categories());
+//            one.setId(1L);
+//            one.setName("Mobiles");
+//            item1.setCategories(one);
+//
+//
+//
+//            CategoryItems item2 = new CategoryItems();
+//            item2.setId(2L);
+//            item2.setName("Tablets");
+//            Categories two = (new Categories());
+//            two.setId(1L);
+//            two.setName("Mobiles");
+//            item2.setCategories(two);
+//
+//            List<CategoryItems> list = new ArrayList<>();
+//
+//            list.add(item1);
+//            list.add(item2);
+//
+//            repository.saveAll(list);
+//
+//        };
+//    }
     }

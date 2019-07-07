@@ -1,11 +1,13 @@
 package bazaar.controllers;
 
 import bazaar.entities.Categories;
+import bazaar.entities.CategoryItems;
 import bazaar.entities.Item;
 import bazaar.api.BaseExecutor;
 import bazaar.api.BaseResponse;
 import bazaar.custom.exceptions.DataNotFoundException;
 import bazaar.services.CategoriesService;
+import bazaar.services.CategoryItemService;
 import bazaar.services.ItemService;
 import bazaar.utils.ResponseRelatedFields;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,10 @@ public class ItemController {
 
     @Autowired
     private CategoriesService categoriesService;
+
+
+    @Autowired
+    private CategoryItemService categoryItemService;
 
 
     @RequestMapping(produces = "application/json", value = "/list/{category}")
@@ -62,8 +68,14 @@ public class ItemController {
 
 
     @RequestMapping("/categoryList")
-    public List getCategoryList() {
-        return null;//categoriesService.getAllCategories();
+    public BaseResponse getCategoryList() {
+        return BaseExecutor.getBaseResponse(categoriesService.getAllCategories());
+    }
+
+
+    @RequestMapping("/categoryList/{id}")
+    public BaseResponse getCategoryById(@PathVariable String id) {
+        return BaseExecutor.getBaseResponse(categoryItemService.getCategoryItemById(id));
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/item")
