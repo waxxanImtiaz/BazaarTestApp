@@ -74,7 +74,7 @@ public class ItemController {
 
 
     @RequestMapping("/categoryList/{id}")
-    public BaseResponse getCategoryById(@PathVariable String id) {
+    public BaseResponse getCategoryById(@PathVariable Long id) {
         return BaseExecutor.getBaseResponse(categoryItemService.getCategoryItemById(id));
     }
 

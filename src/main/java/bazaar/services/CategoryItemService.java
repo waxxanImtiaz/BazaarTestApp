@@ -16,7 +16,7 @@ public class CategoryItemService {
     @Autowired
     private CategoryItemRepo categoryItemRepo;
     @SuppressWarnings("unchecked")
-    public List<CategoryItems> getCategoryItemById(String id){
-        return categoryItemRepo.getCategoryItemsByCategoryId(id);// categoryItemRepo.getAllItems();
+    public List<CategoryItems> getCategoryItemById(Long id){
+        return categoryItemRepo.getCategoryItemsByCategories_Id(id);// categoryItemRepo.getAllItems();
     }
 }

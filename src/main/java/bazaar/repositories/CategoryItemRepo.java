@@ -12,5 +12,5 @@ import java.util.List;
 public interface CategoryItemRepo extends CrudRepository<CategoryItems, Long> {
 //
 //        @Query("SELECT i FROM CategoryItems i WHERE i.categoryId = :categories_id")
-        List<CategoryItems> getCategoryItemsByCategoryId(@Param("categories_id") String id);
+        List<CategoryItems> getCategoryItemsByCategories_Id(@Param("categories_id") Long id);
 }
