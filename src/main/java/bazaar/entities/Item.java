@@ -18,6 +18,7 @@ public class Item {
     private String category;
     private String phoneNumber;
 
+    private boolean active;
     public Long getId() {
         return id;
     }
@@ -96,5 +97,13 @@ public class Item {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }

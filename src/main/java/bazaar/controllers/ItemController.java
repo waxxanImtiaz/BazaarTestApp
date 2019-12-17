@@ -69,6 +69,12 @@ public class ItemController {
 
     @RequestMapping("/categoryList")
     public BaseResponse getCategoryList() {
+        try{
+            Thread.sleep(1000);
+        }catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+
         return BaseExecutor.getBaseResponse(categoriesService.getAllCategories());
     }
 
