@@ -2,48 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9603421-6c0d-4cca-8e31-eef0e2407455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0001.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0002.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0003.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0004.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0005.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0006.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0007.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0008.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-master.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/controllers/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/controllers/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/entities/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/entities/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-boot.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/Driver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bazaar/controllers/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/controllers/ItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/entities/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/entities/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/css/templatemo-misc.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/templatemo-misc.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/css/templatemo-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/templatemo-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/js/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/js/jquery.easing-1.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/jquery.easing-1.3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/js/vendor/jquery.gmap3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/vendor/jquery.gmap3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/jstest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/jstest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/product-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/widgets/loader/loader.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/widgets/loader/loader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/widgets/loader/loader.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/widgets/loader/loader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/widgets/loader/loader_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/widgets/loader/loader_handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/widgets/product/product_item.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/widgets/product/product_item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/widgets/product/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/widgets/product/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/widgets/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/widgets/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/widgets/signup/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/widgets/signup/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/widgets/signup/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/widgets/signup/signup.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +51,7 @@
         <option value="CSS File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -133,6 +96,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554102376995" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="D:/My Files/Repo/mymoney" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -146,22 +111,29 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="bazaar.beans" />
-      <recent name="bazaar.entities" />
-      <recent name="bazaar.controllers" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="bazaar.api" />
+      <recent name="bazaar.services" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
-      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="client" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\My Files\Bazaar\BazaarApp\src\main\resources\public\widgets\signup" />
       <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
       <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\templates" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="bazaar.beans" />
+      <recent name="bazaar.entities" />
+      <recent name="bazaar.controllers" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
+      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -191,6 +163,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BaseExecutorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bazaar.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bazaar.api" />
+      <option name="MAIN_CLASS_NAME" value="bazaar.api.BaseExecutorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8111/springboot/spring-boot/index.html">
       <method v="2" />
     </configuration>
@@ -210,11 +197,13 @@
     <list>
       <item itemvalue="Application.Driver" />
       <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JUnit.BaseExecutorTest" />
       <item itemvalue="Spring Boot.Driver" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Driver" />
+        <item itemvalue="JUnit.BaseExecutorTest" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Spring Boot.Driver" />
       </list>
@@ -322,7 +311,13 @@
       <workItem from="1576510251005" duration="1961000" />
       <workItem from="1576558733154" duration="2448000" />
       <workItem from="1576577520812" duration="1201000" />
-      <workItem from="1576598759655" duration="697000" />
+      <workItem from="1576598759655" duration="2910000" />
+      <workItem from="1576650587437" duration="51000" />
+      <workItem from="1576652420565" duration="45000" />
+      <workItem from="1576652474924" duration="50000" />
+      <workItem from="1576653031924" duration="1924000" />
+      <workItem from="1576684409647" duration="633000" />
+      <workItem from="1576731046957" duration="165000" />
     </task>
     <task id="LOCAL-00001" summary="setting products">
       <created>1550423712492</created>
