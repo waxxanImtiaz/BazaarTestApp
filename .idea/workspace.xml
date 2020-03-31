@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9603421-6c0d-4cca-8e31-eef0e2407455" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DockerFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/beans/LOV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bazaar/controllers/ItemControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/controllers/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/controllers/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/entities/Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/entities/Categories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/services/CategoriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/services/CategoriesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/Driver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bazaar/controllers/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/controllers/ItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/services/CategoriesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/services/CategoriesService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,28 +56,11 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>logi</find>
-      <find>submit</find>
-      <find>data</find>
-      <find>search</find>
-      <find>showSearchResult</find>
-      <find>signup</find>
-      <find>signupDialog</find>
-      <find>#bazaar</find>
-      <find>class</find>
-      <find>nav</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>className</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,7 +89,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="D:/My Files/Repo/mymoney" />
+    <property name="last_opened_file_path" value="D:/Work/ReactJs/bazaar-react" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -112,29 +102,36 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="bazaar.controllers" />
       <recent name="bazaar.api" />
       <recent name="bazaar.services" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\My Files\Bazaar\BazaarApp\src\main\resources\public\widgets\signup" />
-      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
-      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\templates" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="bazaar.beans" />
       <recent name="bazaar.entities" />
       <recent name="bazaar.controllers" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="client" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
       <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\webapp" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My Files\Bazaar\BazaarApp\src\main\resources\public\widgets\signup" />
+      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
+      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn run" />
+      <command value="mvn package" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -148,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Driver">
+  <component name="RunManager" selected="Spring Boot.Driver">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="bazaar.Driver" />
@@ -178,6 +175,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ItemControllerTest.getCategoryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bazaar.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bazaar.controllers" />
+      <option name="MAIN_CLASS_NAME" value="bazaar.controllers.ItemControllerTest" />
+      <option name="METHOD_NAME" value="getCategoryList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8111/springboot/spring-boot/index.html">
       <method v="2" />
     </configuration>
@@ -194,20 +207,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DockerFile" type="docker-deploy" factoryName="dockerfile">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="DockerFile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Driver" />
+      <item itemvalue="Docker.DockerFile" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JUnit.BaseExecutorTest" />
       <item itemvalue="Spring Boot.Driver" />
+      <item itemvalue="JUnit.ItemControllerTest.getCategoryList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Driver" />
+        <item itemvalue="JUnit.ItemControllerTest.getCategoryList" />
         <item itemvalue="Application.Driver" />
         <item itemvalue="JUnit.BaseExecutorTest" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="Spring Boot.Driver" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -318,6 +352,20 @@
       <workItem from="1576653031924" duration="1924000" />
       <workItem from="1576684409647" duration="633000" />
       <workItem from="1576731046957" duration="165000" />
+      <workItem from="1577546297661" duration="2541000" />
+      <workItem from="1577680541366" duration="175000" />
+      <workItem from="1577860638940" duration="2104000" />
+      <workItem from="1577892452586" duration="1363000" />
+      <workItem from="1577941283753" duration="1279000" />
+      <workItem from="1579159776632" duration="2337000" />
+      <workItem from="1579236513733" duration="1256000" />
+      <workItem from="1581405971351" duration="905000" />
+      <workItem from="1584959894572" duration="1914000" />
+      <workItem from="1585214943013" duration="1251000" />
+      <workItem from="1585399021342" duration="52000" />
+      <workItem from="1585490251813" duration="1929000" />
+      <workItem from="1585576510708" duration="1174000" />
+      <workItem from="1585654678186" duration="4234000" />
     </task>
     <task id="LOCAL-00001" summary="setting products">
       <created>1550423712492</created>

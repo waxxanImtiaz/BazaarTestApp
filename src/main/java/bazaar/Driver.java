@@ -19,7 +19,7 @@ import java.util.Locale;
 
 @SpringBootApplication
 // Using a root package also allows the @ComponentScan annotation to be used without needing to specify a basePackage attribute
-@ComponentScan
+
 public class Driver {
     public static void main(String[] args) {
         SpringApplication.run(Driver.class,args);
