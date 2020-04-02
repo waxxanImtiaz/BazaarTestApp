@@ -3,16 +3,32 @@ package bazaar.entities;
 import javax.persistence.*;
 
 @Entity
-public class City {
+public class State {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
-    private String cityName;
+    private String stateName;
     private boolean active;
     private String lat;
     private String lng;
     @OneToOne
-    private State state;
+    private Country country;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getStateName() {
+        return stateName;
+    }
+
+    public void setStateName(String stateName) {
+        this.stateName = stateName;
+    }
 
     public boolean isActive() {
         return active;
@@ -39,27 +55,13 @@ public class City {
     }
 
 
-    public int getId() {
-        return id;
+
+    public Country getCountry() {
+        return country;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCountry(Country country) {
+        this.country = country;
     }
 
-    public String getCityName() {
-        return cityName;
-    }
-
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
-
-    public State getState() {
-        return state;
-    }
-
-    public void setState(State state) {
-        this.state = state;
-    }
 }
