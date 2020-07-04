@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PublishController {
 
-
-
     @Autowired
     private StateService stateService;
 

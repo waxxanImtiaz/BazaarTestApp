@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="persistance-jpa" />
+        <module name="BazaarApp" />
         <module name="spring-boot" />
         <module name="springbootprojects" />
       </profile>
@@ -15,6 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="BazaarApp" options="-parameters" />
       <module name="spring-boot" options="-parameters" />
     </option>
   </component>
