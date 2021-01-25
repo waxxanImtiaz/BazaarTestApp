@@ -6,12 +6,16 @@ import bazaar.entities.Item;
 import bazaar.api.BaseExecutor;
 import bazaar.api.BaseResponse;
 import bazaar.custom.exceptions.DataNotFoundException;
+import bazaar.exceptions.ItemNotFoundException;
 import bazaar.services.CategoriesService;
 import bazaar.services.CategoryItemService;
 import bazaar.services.ItemService;
 import bazaar.utils.ResponseRelatedFields;
+import org.hibernate.service.spi.InjectService;
+import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,10 +23,15 @@ import java.util.List;
 @RestController
 public class ItemController {
 
-
     @Autowired
     private ItemService itemService;
 
+
+    @Bean
+    private ItemService getItemService(ItemService itemService){
+        return itemService;
+
+    }
     @Autowired
     private CategoriesService categoriesService;
 
@@ -30,13 +39,16 @@ public class ItemController {
     @Autowired
     private CategoryItemService categoryItemService;
 
-
+    @RequestMapping("/admin")
+    public String admin() {
+        return "Hello admin";
+    }
     @RequestMapping(produces = "application/json", value = "/list/{category}")
     public BaseResponse getItemsByCategory(@PathVariable String category) {
         return BaseExecutor.getBaseResponse(itemService.getItemsByCategory(category));
     }
 
-    @RequestMapping("/test")
+    @GetMapping("/test")
     public String hello() {
         return "Hello i am server";
     }
@@ -63,6 +75,8 @@ public class ItemController {
     @RequestMapping("/item/{id}")
     public BaseResponse getItem(@PathVariable Long id) {
 
+        if (id == 1)
+            throw new ItemNotFoundException();
         return BaseExecutor.getBaseResponse( itemService.getItemById(id));
     }
 

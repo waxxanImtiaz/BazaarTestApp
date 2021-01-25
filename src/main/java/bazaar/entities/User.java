@@ -13,6 +13,8 @@ public class User {
     private String password;
     private String mobile;
 
+    private String username;
+    private Boolean enabled;
 
 
     public String getName() {
@@ -45,5 +47,21 @@ public class User {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
     }
 }

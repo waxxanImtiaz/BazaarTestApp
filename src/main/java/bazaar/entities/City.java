@@ -11,7 +11,7 @@ public class City {
     private boolean active;
     private String lat;
     private String lng;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private State state;
 
     public boolean isActive() {

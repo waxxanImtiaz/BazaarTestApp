@@ -10,7 +10,6 @@ import java.util.List;
 
 @Service
 public class ItemService {
-    @Autowired
     private ItemRepository itemRepository;
 
 

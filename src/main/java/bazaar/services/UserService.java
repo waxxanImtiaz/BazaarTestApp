@@ -8,10 +8,11 @@ import bazaar.resources.UserResource;
 import bazaar.utils.ResponseRelatedFields;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService  {
+public class UserService   {
     @Autowired
     private UserRepository userRepository;
 
@@ -33,6 +34,10 @@ public class UserService  {
         }
         return baseResponse;
 
+    }
+
+    public User findUserByUsername(String username){
+        return userRepository.findUserByUsername(username);
     }
     public BaseResponse getUserByEmailAndPassword(String email, String password){
         UserResource res = new UserResource();

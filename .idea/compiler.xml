@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="persistance-jpa" />
-        <module name="BazaarApp" />
         <module name="spring-boot" />
+        <module name="BazaarApp" />
+        <module name="persistance-jpa" />
         <module name="springbootprojects" />
       </profile>
     </annotationProcessing>

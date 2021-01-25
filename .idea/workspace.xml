@@ -1,77 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a9603421-6c0d-4cca-8e31-eef0e2407455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BazaarApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/aop/ItemAccessAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/beans/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/beans/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/beans/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/component/Test2Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/component/TestComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/configuration/BazaarSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/configuration/InterceptorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/controllers/HelloWorldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/controllers/ItemExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/exceptions/ItemExceptionsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/exceptions/ItemNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/filters/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/interceptors/ItemServiceInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/model/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/model/AuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/services/BazaarUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bazaar/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-0014.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Spring_Data_JPA_1_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Spring_Data_JPA_1_3_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/create-react-app.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/create-react-app.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/envinfo.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/envinfo.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/semver.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/which.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/which.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-name/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/.npmignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-name/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-name/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-name/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-name/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/semver.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rxjs/bundles/rxjs.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rxjs/bundles/rxjs.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/CopyrightNotice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/CopyrightNotice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/docs/generator.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/docs/generator.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/tslib.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/tslib.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/tslib.es6.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/tslib.es6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/tslib.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/tslib.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistance-jpa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/persistance-jpa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootprojects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootprojects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/api/BaseExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/api/BaseExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/api/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/api/BaseResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/beans/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/beans/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/controllers/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/controllers/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/controllers/ItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/controllers/publish/controller/PublishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/controllers/publish/controller/PublishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/custom/exceptions/DataNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/custom/exceptions/DataNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/entities/CategoryItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/entities/CategoryItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/entities/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/entities/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/repositories/CategoriesRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/repositories/CategoriesRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/repositories/CategoryItemRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/repositories/CategoryItemRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/repositories/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/repositories/ItemRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/resources/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/services/CategoryItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/services/CategoryItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/services/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/services/ItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bazaar/utils/ResponseRelatedFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bazaar/utils/ResponseRelatedFields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/templatemo-misc.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/templatemo-misc.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/templatemo-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/templatemo-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/jquery.easing-1.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/jquery.easing-1.3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/vendor/jquery.gmap3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/vendor/jquery.gmap3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/jstest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/jstest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/product-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/loader/loader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/loader/loader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/loader/loader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/loader/loader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/loader/loader_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/loader/loader_handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/product/product_item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/product/product_item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/product/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/product/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/signup/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/signup/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/widgets/signup/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/widgets/signup/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/changelog/db.changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/controllers/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/controllers/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/controllers/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/controllers/ItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/entities/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/entities/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/repositories/ItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/repositories/ItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/services/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/services/ItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bazaar/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bazaar/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/changelog/db.changelog-master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +104,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="d481569f-10da-4f3f-9f0f-020a0071c7e5" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1V0u2tkqEnI1eNuMSA32YHFMB0o" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -144,7 +133,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Angular/services" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -155,6 +144,9 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="bazaar.controllers" />
@@ -164,24 +156,28 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="bazaar.beans" />
-      <recent name="bazaar.entities" />
-      <recent name="bazaar.controllers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
-      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="client" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\My Files\Bazaar\BazaarApp\src\main\resources\data\changelog\insert" />
       <recent name="E:\My Files\Bazaar\BazaarApp\src\main\resources\data\changelog\tables" />
       <recent name="D:\My Files\Bazaar\BazaarApp\src\main\resources\public\widgets\signup" />
       <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
       <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\templates" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="bazaar.beans" />
+      <recent name="bazaar.entities" />
+      <recent name="bazaar.controllers" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bazaar.model" />
+      <recent name="client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\public" />
+      <recent name="D:\My Files\intellij\springbootprojects\src\main\resources\webapp" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="bazaar.services" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -190,17 +186,28 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Driver">
+  <component name="RunManager" selected="Spring Boot.Driver">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="bazaar.Driver" />
-      <module name="spring-boot" />
+      <module name="BazaarApp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bazaar.custom.exceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,6 +247,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Driver" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="BazaarApp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bazaar.custom.exceptions.*" />
@@ -249,6 +257,70 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="bazaar.Driver" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 7.0.65" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springboot" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57842" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -268,17 +340,19 @@
       <item itemvalue="JUnit.BaseExecutorTest" />
       <item itemvalue="JUnit.ItemControllerTest.getCategoryList" />
       <item itemvalue="Spring Boot.Driver" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Driver" />
         <item itemvalue="Spring Boot.Driver" />
+        <item itemvalue="Application.Driver" />
         <item itemvalue="JUnit.ItemControllerTest.getCategoryList" />
         <item itemvalue="JUnit.BaseExecutorTest" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -404,7 +478,54 @@
       <workItem from="1585654678186" duration="9717000" />
       <workItem from="1585730241632" duration="13635000" />
       <workItem from="1585812543542" duration="1765000" />
-      <workItem from="1593855827795" duration="119000" />
+      <workItem from="1593855827795" duration="3056000" />
+      <workItem from="1593941919462" duration="597000" />
+      <workItem from="1594010882077" duration="729000" />
+      <workItem from="1594496425341" duration="827000" />
+      <workItem from="1594549111036" duration="2319000" />
+      <workItem from="1594566855237" duration="467000" />
+      <workItem from="1594627719270" duration="20000" />
+      <workItem from="1594806016747" duration="1028000" />
+      <workItem from="1599025595616" duration="619000" />
+      <workItem from="1599391103470" duration="2749000" />
+      <workItem from="1603101146726" duration="2064000" />
+      <workItem from="1603172104374" duration="1883000" />
+      <workItem from="1603385867735" duration="2407000" />
+      <workItem from="1603429499583" duration="1581000" />
+      <workItem from="1603457276785" duration="1918000" />
+      <workItem from="1603563110042" duration="437000" />
+      <workItem from="1603611764268" duration="2182000" />
+      <workItem from="1603636040468" duration="594000" />
+      <workItem from="1604469986848" duration="1106000" />
+      <workItem from="1604472069377" duration="4350000" />
+      <workItem from="1604595801567" duration="580000" />
+      <workItem from="1604655026665" duration="1212000" />
+      <workItem from="1604835375275" duration="5267000" />
+      <workItem from="1604899394075" duration="18000" />
+      <workItem from="1605023434094" duration="858000" />
+      <workItem from="1605252998516" duration="3011000" />
+      <workItem from="1605262391743" duration="197000" />
+      <workItem from="1606136159838" duration="13000" />
+      <workItem from="1607579842479" duration="289000" />
+      <workItem from="1607765773265" duration="1209000" />
+      <workItem from="1607844174817" duration="6910000" />
+      <workItem from="1607924728353" duration="1373000" />
+      <workItem from="1608018468146" duration="1635000" />
+      <workItem from="1608097550381" duration="437000" />
+      <workItem from="1608554360195" duration="396000" />
+      <workItem from="1608638433801" duration="813000" />
+      <workItem from="1608707888869" duration="858000" />
+      <workItem from="1608717820288" duration="1313000" />
+      <workItem from="1610871274846" duration="3823000" />
+      <workItem from="1610946367996" duration="3565000" />
+      <workItem from="1611056572259" duration="388000" />
+      <workItem from="1611057503766" duration="735000" />
+      <workItem from="1611062021828" duration="1348000" />
+      <workItem from="1611119729327" duration="5373000" />
+      <workItem from="1611296353046" duration="3600000" />
+      <workItem from="1611382498950" duration="6808000" />
+      <workItem from="1611483174733" duration="3428000" />
+      <workItem from="1611551841204" duration="6415000" />
     </task>
     <task id="LOCAL-00001" summary="setting products">
       <created>1550423712492</created>
@@ -535,17 +656,8 @@
     <option name="localTasksCounter" value="19" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="3">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -571,52 +683,199 @@
     <option name="LAST_COMMIT_MESSAGE" value="singup created" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="0" width="702" height="824" key="#Driver" timestamp="1593855918651">
+    <state x="548" y="325" key="#TomEE_Server" timestamp="1605260542253">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="0" width="702" height="824" key="#Driver/0.0.1536.824@0.0.1536.824" timestamp="1593855918651" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593855946617">
+    <state x="548" y="325" key="#TomEE_Server/0.0.1536.824@0.0.1536.824" timestamp="1605260542253" />
+    <state x="223" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611488378746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1593855946617" />
+    <state x="223" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1611488378746" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1611576218294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611576218294" />
+    <state x="500" y="67" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1605260662050">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="500" y="67" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1605260662050" />
+    <state x="473" y="149" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1611574990600">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="473" y="149" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1536.824@0.0.1536.824" timestamp="1611574990600" />
+    <state x="524" y="119" key="#xdebugger.evaluate" timestamp="1611390444316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="119" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1611390444316" />
+    <state width="437" height="466" key="DebuggerActiveHint" timestamp="1611488548650">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="437" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1611488548650" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1611299675340">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611299675340" />
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1611576375064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611576375064" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1611576375064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611576375064" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1611576375064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611576375064" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1611576375064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611576375064" />
+    <state width="1493" height="216" key="GridCell.Tab.1.bottom" timestamp="1611576375064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="216" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611576375064" />
+    <state width="1493" height="216" key="GridCell.Tab.1.center" timestamp="1611576375064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="216" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1611576375064" />
+    <state width="1493" height="216" key="GridCell.Tab.1.left" timestamp="1611576375064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="216" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1611576375064" />
+    <state width="1493" height="216" key="GridCell.Tab.1.right" timestamp="1611576375064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="216" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1611576375064" />
+    <state width="1493" height="268" key="GridCell.Tab.2.bottom" timestamp="1611389462613">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611389462613" />
+    <state width="1493" height="268" key="GridCell.Tab.2.center" timestamp="1611389462612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1611389462612" />
+    <state width="1493" height="268" key="GridCell.Tab.2.left" timestamp="1611389462612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1611389462612" />
+    <state width="1493" height="268" key="GridCell.Tab.2.right" timestamp="1611389462613">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1611389462613" />
+    <state width="1493" height="268" key="GridCell.Tab.3.bottom" timestamp="1611492353737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611492353737" />
+    <state width="1493" height="268" key="GridCell.Tab.3.center" timestamp="1611492353737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1611492353737" />
+    <state width="1019" height="260" key="GridCell.Tab.3.left" timestamp="1611492353737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1019" height="260" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1611492353737" />
+    <state width="1493" height="268" key="GridCell.Tab.3.right" timestamp="1611492353737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1611492353737" />
+    <state x="568" y="114" key="RollbackChangesDialog" timestamp="1611552920254">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="568" y="114" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1611552920254" />
+    <state x="186" y="140" width="1033" height="326" key="dock-window-1" timestamp="1611488708385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="186" y="140" width="1033" height="326" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1611488708385" />
+    <state x="186" y="140" width="1033" height="326" key="dock-window-2" timestamp="1611488708385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="186" y="140" width="1033" height="326" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1611488708385" />
+    <state x="186" y="140" width="1033" height="326" key="dock-window-3" timestamp="1611488708385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="186" y="140" width="1033" height="326" key="dock-window-3/0.0.1536.824@0.0.1536.824" timestamp="1611488708385" />
+    <state x="186" y="140" width="1033" height="326" key="dock-window-4" timestamp="1611488708385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="186" y="140" width="1033" height="326" key="dock-window-4/0.0.1536.824@0.0.1536.824" timestamp="1611488708385" />
+    <state x="186" y="140" width="1033" height="326" key="dock-window-5" timestamp="1611488708385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="186" y="140" width="1033" height="326" key="dock-window-5/0.0.1536.824@0.0.1536.824" timestamp="1611488708385" />
+    <state x="186" y="140" width="1033" height="326" key="dock-window-6" timestamp="1611489369279">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="186" y="140" width="1033" height="326" key="dock-window-6/0.0.1536.824@0.0.1536.824" timestamp="1611489369279" />
+    <state x="477" y="145" width="581" height="534" key="find.popup" timestamp="1603388741179">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="145" width="581" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1603388741179" />
+    <state x="209" y="63" key="new project wizard" timestamp="1605253369327">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="63" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605253369327" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1611574817874">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1611574817874" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611575857544">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611575857544" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/ItemService.java</url>
-          <line>17</line>
+          <line>16</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/ItemService.java</url>
-          <line>48</line>
+          <line>47</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/controllers/UserController.java</url>
-          <line>17</line>
+          <line>58</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java</url>
-          <line>25</line>
+          <line>26</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java</url>
-          <line>28</line>
+          <line>29</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bazaar/services/UserService.java</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bazaar/controllers/ItemController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bazaar/configuration/BazaarSecurityConfiguration.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bazaar/controllers/HelloWorldController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
