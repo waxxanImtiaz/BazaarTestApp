@@ -1,0 +1,29 @@
+------------------BUILD spring boot image
+
+FROM openjdk:8
+ADD target/demo-docker.jar demo-docker.jar
+EXPOSE 8112
+ENTRYPOINT ["java","-jar","demo-docker.jar"]
+
+
+--------COMMAND
+1) build your project using maven install first
+
+2) docker build -t demo{image name}
+
+this will read Dockerfile and build the image
+
+
+3) docker run -p 8112:8112 demo {image name} 
+
+the port should be same as port of the server
+
+
+
+-----------RUN MySQL image
+
+1) docker pull mysql
+
+2) docker run --name mysql-standalone -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABSE=test -e MYSQL_USER=sa -e 
+MYSQL_PASSWORD=password -d mysql:latest
+
